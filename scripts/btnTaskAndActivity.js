@@ -30,7 +30,7 @@ for (const button of btnCompleted) {
 
     div.innerHTML = `
      <p class="bg-secondary p-2 text-black/70 rounded-lg">
-     You have Complete The Task ${cardTitle} at ${currentTimeDate.toLocaleTimeString()}
+     You have Complete The Task <span class='font-bold'>${cardTitle}</span> at <span class='text-sm text-emerald-700 font-semibold'>${currentTimeDate.toLocaleTimeString()}</span
      </p>
 `;
 
