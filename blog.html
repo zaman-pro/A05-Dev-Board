@@ -90,12 +90,31 @@
                 />
               </svg>
             </div>
-            <p class="text-xl opacity-60">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              eaque deserunt cum, facilis a voluptatibus. Ipsam, similique ad
-              dicta, autem, perferendis exercitationem magnam maiores ullam hic
-              debitis nobis laborum impedit.
+            <p class="text-xl opacity-60 mb-4">
+              There are several ways to select an element in the DOM.
             </p>
+            <ul class="text-xl opacity-60 flex flex-col gap-3">
+              <li>
+                <strong>01. getElementById():</strong>
+                Selects an element by its unique id
+              </li>
+              <li>
+                <strong>02. getElementsByClassName():</strong>
+                Selects elements by their class
+              </li>
+              <li>
+                <strong>03. getElementsByTagName():</strong>
+                Selects elements by their tag name
+              </li>
+              <li>
+                <strong>04. querySelector():</strong>
+                Selects the first element that matches the CSS selector
+              </li>
+              <li>
+                <strong>05. querySelectorAll():</strong>
+                Selects all elements that match the CSS selector
+              </li>
+            </ul>
           </div>
 
           <!-- card 2 -->
@@ -120,12 +139,26 @@
                 />
               </svg>
             </div>
-            <p class="text-xl opacity-60">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              eaque deserunt cum, facilis a voluptatibus. Ipsam, similique ad
-              dicta, autem, perferendis exercitationem magnam maiores ullam hic
-              debitis nobis laborum impedit.
+            <p class="text-xl opacity-60 mb-4">
+              The difference between innerHTML, innerText, and textContent is:
             </p>
+            <ul class="text-xl opacity-60 flex flex-col gap-3">
+              <li>
+                <strong>innerHTML:</strong>
+                It represents the HTML content inside an element (including HTML
+                tags). It can be used to get or set HTML content.
+              </li>
+              <li>
+                <strong>innerText:</strong>
+                It represents the visible text content of an element, also HTML
+                tags. It can be affected by CSS styles like: (display:none)
+              </li>
+              <li>
+                <strong>textContent:</strong>
+                Represents the text content of an element, as well as all nested
+                elements, but does not account for CSS styling.
+              </li>
+            </ul>
           </div>
 
           <!-- card 3 -->
@@ -150,10 +183,10 @@
               </svg>
             </div>
             <p class="text-xl opacity-60">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              eaque deserunt cum, facilis a voluptatibus. Ipsam, similique ad
-              dicta, autem, perferendis exercitationem magnam maiores ullam hic
-              debitis nobis laborum impedit.
+              Event delegation is a technique where you add a single event
+              listener to a parent element instead of adding one to each child
+              element. The parent listens for events that bubble up from the
+              child elements.
             </p>
           </div>
 
@@ -179,10 +212,10 @@
               </svg>
             </div>
             <p class="text-xl opacity-60">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              eaque deserunt cum, facilis a voluptatibus. Ipsam, similique ad
-              dicta, autem, perferendis exercitationem magnam maiores ullam hic
-              debitis nobis laborum impedit.
+              Event bubbling is a process where an event triggered on a child
+              element "bubbles" up to its parent elements. In other words, when
+              an event happens on a nested element, it is first handled by that
+              element, and then it moves upwards through its parent elements.
             </p>
           </div>
 
@@ -208,11 +241,25 @@
                 />
               </svg>
             </div>
-            <p class="text-xl opacity-60">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              eaque deserunt cum, facilis a voluptatibus. Ipsam, similique ad
-              dicta, autem, perferendis exercitationem magnam maiores ullam hic
-              debitis nobis laborum impedit.
+
+            <ul class="text-xl opacity-60 flex flex-col gap-3">
+              <li>
+                <strong>Create an element:</strong>
+                We use document.createElement() to create a new element.
+              </li>
+              <li>
+                <strong>Add an element:</strong>
+                We use methods like appendChild(), prepend(), or insertBefore()
+                to add elements to the DOM.
+              </li>
+              <li>
+                <strong>Remove an element:</strong>
+                We use removeChild() to remove a child element from a parent, or
+                remove() to remove an element directly.
+              </li>
+            </ul>
+            <p class="text-xl opacity-60 mt-4">
+              This is how we create, add, and remove elements using JavaScript.
             </p>
           </div>
         </div>
