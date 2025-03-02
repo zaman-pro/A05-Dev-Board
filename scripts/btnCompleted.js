@@ -15,8 +15,12 @@ for (const button of btnCompleted) {
     button.disabled = true;
 
     // !for date
-    const currentTime = new Date();
+    // const currentTime = new Date();
 
     alert("Board updated Successfully!");
+
+    if (parseInt(taskCount.innerText) === 0) {
+      alert("Congrats! You have completed all the current task");
+    }
   });
 }
